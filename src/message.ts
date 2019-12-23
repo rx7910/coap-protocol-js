@@ -2,8 +2,6 @@
  * coap message and option object
  */
 
-import CoAPOption from './option';
-
 class CoAPMessage {
   get version(): number {
     return this._version;
@@ -53,11 +51,11 @@ class CoAPMessage {
     this._token = value;
   }
 
-  get options(): CoAPOption {
+  get options(): any {
     return this._options;
   }
 
-  set options(value: CoAPOption) {
+  set options(value: any) {
     this._options = value;
   }
 
@@ -74,6 +72,8 @@ class CoAPMessage {
   private _code: number = 0;
   private _id: number = 0;
   private _token: number[] = [];
-  private _options: CoAPOption = [];
+  private _options: any = [];
   private _payload: number | string = 0;
 }
+
+export default CoAPMessage;
