@@ -1,3 +1,2 @@
-const foo = 'bar';
+export { serialize, deserialize } from 'protocol';
 
-export default foo;

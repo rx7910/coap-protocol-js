@@ -1,5 +1,5 @@
 {
-  "name": "coap-protocol-js",
+  "name": "@kazila/coap-protocol-js",
   "version": "0.1.0",
   "description": "A Pure JavaScript Implementation of CoAP Protocol",
   "main": "lib",
